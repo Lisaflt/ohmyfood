@@ -1,0 +1,7 @@
+@import "header.scss";
+p {
+	color: blue;
+	& :hover {
+		color: green;
+	}
+}

@@ -1,0 +1,16 @@
+header {
+  background-color: red;
+}
+
+footer {
+  background-color: blue;
+}
+
+p {
+  color: blue;
+}
+
+p :hover {
+  color: green;
+}
+/*# sourceMappingURL=main.css.map */

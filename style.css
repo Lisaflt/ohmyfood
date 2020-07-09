@@ -1,0 +1,13 @@
+header {
+	background-color: red;
+}
+
+p {
+	color: blue;
+}
+
+p :hover {
+	color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
