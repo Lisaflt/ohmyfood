@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "abstracts/_mixins.scss",
+        "abstracts/_variables.scss",
+        "layout/_footer.scss",
+        "layout/_header.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
