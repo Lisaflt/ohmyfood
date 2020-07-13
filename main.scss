@@ -1,7 +1,5 @@
-@import "header.scss";
-p {
-	color: blue;
-	& :hover {
-		color: green;
-	}
-}
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./layout/header";
+@import "./layout/footer";
