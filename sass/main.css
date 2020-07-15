@@ -1,1 +1,100 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+header {
+  background: #19a083;
+  height: 100px;
+  text-align: center;
+  color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat";
+}
+
+footer {
+  background: #19a083;
+  color: yellow;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+body {
+  margin: auto;
+}
+
+main {
+  max-width: 710px;
+  margin: auto;
+}
+
+.conteneurLeft {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 12px #555;
+          box-shadow: 1px 1px 12px #555;
+  background-color: #fcdfdb;
+  font-family: "black_hand";
+}
+
+.conteneurRight {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 12px #555;
+          box-shadow: 1px 1px 12px #555;
+  background-color: #fdf5fe;
+}
+
+.menuBottomLeft {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 12px #555;
+          box-shadow: 1px 1px 12px #555;
+  background-color: #f9f9f9;
+}
+
+.menuBottomRight {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 12px #555;
+          box-shadow: 1px 1px 12px #555;
+  background-color: #fdfffd;
+}
+
+#conteneurTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+
+.conteneurBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.mentionsLegales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+}
+/*# sourceMappingURL=main.css.map */

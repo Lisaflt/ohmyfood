@@ -1,5 +1,50 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import "./abstracts/variables", "./abstracts/mixins";
 
-@import "layout/footer";
-@import "layout/header";
+@import "./layout/header";
+@import "./layout/footer";
+
+body {
+	@include body;
+}
+
+main {
+	@include main;
+}
+
+.conteneurLeft {
+	@include menuHome;
+	background-color: $backgroundcolor-menu1;
+	font-family: $policemenu1;
+}
+
+.conteneurRight {
+	@include menuHome;
+	background-color: $backgroundcolor-menu2;
+}
+
+.menuBottomLeft {
+	@include menuHome;
+	background-color: $backgroundcolor-menu3;
+}
+
+.menuBottomRight {
+	@include menuHome;
+	background-color: $backgroundcolor-menu4;
+}
+
+#conteneurTop {
+	@include menuFlex;
+	margin-top: 30px;
+}
+
+.conteneurBottom {
+	@include menuFlex;
+	margin-top: 30px;
+	padding-bottom: 40px;
+}
+
+.mentionsLegales {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 20px 0px 20px;
+}
