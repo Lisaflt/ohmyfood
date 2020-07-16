@@ -1,15 +1,19 @@
 @mixin menuHome {
-	width: 250px;
+	width: 280px;
 	height: 350px;
-	text-align: center;
 	box-shadow: 1px 1px 12px #555;
 }
 
 @mixin menuPage {
 	width: 800px;
-	height: 900px;
-	box-shadow: 1px 1px 12 px #555;
+	height: 750px;
+	box-shadow: 1px 1px 12px #555;
 	margin: auto;
+}
+
+@mixin dishFlex {
+	display: flex;
+	justify-content: space-around;
 }
 
 @mixin body {
@@ -21,24 +25,33 @@
 	margin: auto;
 }
 
+@mixin mainMenu {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
 @mixin menuFlex {
 	display: flex;
 	justify-content: space-around;
 }
 
-@mixin a {
-	color: yellow;
+@mixin colornav {
+	color: $color-nav;
 	text-decoration: none;
 }
 
+@mixin colornavHome {
+	text-decoration: none;
+	color: black;
+}
+
 @mixin degrade {
-	background-image: linear-gradient(
-		to right,
-		rgb(223, 135, 46),
-		rgb(143, 91, 253)
-	);
 	color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text;
 	font-size: 50px;
+}
+
+@mixin titleCenter {
+	text-align: center;
 }

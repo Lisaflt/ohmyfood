@@ -14,7 +14,7 @@ main {
 .conteneurLeft {
 	@include menuHome;
 	background-color: $backgroundcolor-menu1;
-	font-family: $policemenu1;
+	font-family: $policeMenu1;
 }
 
 .conteneurRight {
@@ -34,7 +34,7 @@ main {
 
 #conteneurTop {
 	@include menuFlex;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 .conteneurBottom {
@@ -42,9 +42,17 @@ main {
 	margin-top: 30px;
 	padding-bottom: 40px;
 }
-
 .mentionsLegales {
 	display: flex;
 	justify-content: space-between;
 	margin: 0px 20px 0px 20px;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 80px;
+}
+
+a {
+	@include colornavHome;
 }

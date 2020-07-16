@@ -1,8 +1,18 @@
+@font-face {
+  font-family: "blackHand_TRIAL";
+  src: url("blackHand_TRIAL.otf") format "OpenTypeFont", url "blackHand_TRIAL.ttf" format "truetype";
+}
+
+@font-face {
+  font-family: "Itim-Regular";
+  src: url("Itim-Regular.ttf") format "trueType";
+}
+
 header {
   background: #19a083;
-  height: 100px;
   text-align: center;
-  color: yellow;
+  color: #f9cb45;
+  font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +24,7 @@ header {
 
 footer {
   background: #19a083;
-  color: yellow;
+  color: #f9cb45;
   margin-top: 20px;
   font-family: "Montserrat";
   font-size: 20px;
@@ -33,37 +43,33 @@ main {
 }
 
 .conteneurLeft {
-  width: 250px;
+  width: 280px;
   height: 350px;
-  text-align: center;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   background-color: #fcdfdb;
-  font-family: "black_hand";
+  font-family: "blackHand_TRIAL";
 }
 
 .conteneurRight {
-  width: 250px;
+  width: 280px;
   height: 350px;
-  text-align: center;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
-  background-color: #fdf5fe;
+  background-color: #fef5fe;
 }
 
 .menuBottomLeft {
-  width: 250px;
+  width: 280px;
   height: 350px;
-  text-align: center;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   background-color: #f9f9f9;
 }
 
 .menuBottomRight {
-  width: 250px;
+  width: 280px;
   height: 350px;
-  text-align: center;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   background-color: #fdfffd;
@@ -75,7 +81,7 @@ main {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .conteneurBottom {
@@ -96,5 +102,15 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0px 20px 0px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

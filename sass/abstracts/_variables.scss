@@ -1,8 +1,23 @@
 $header_footer: #19a083;
-$color-nav: yellow;
+$color-nav: rgb(249, 203, 69);
 $backgroundcolor-menu1: #fcdfdb;
-$backgroundcolor-menu2: rgb(253, 245, 254);
+$backgroundcolor-menu2: rgb(254, 245, 254);
 $backgroundcolor-menu3: rgb(249, 249, 249);
 $backgroundcolor-menu4: #fdfffd;
 
 $policeHome: "Montserrat";
+
+@font-face {
+	font-family: "blackHand_TRIAL";
+	src: url("blackHand_TRIAL.otf") format ("OpenTypeFont"),
+		url ("blackHand_TRIAL.ttf") format ("truetype");
+}
+
+@font-face {
+	font-family: "Itim-Regular";
+	src: url("Itim-Regular.ttf") format ("trueType");
+}
+
+$policeMenu1: "blackHand_TRIAL";
+
+$policeDish1: "Itim-Regular";
