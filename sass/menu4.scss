@@ -15,27 +15,29 @@ main {
 
 .menu {
 	@include menuPage;
-	background-color: $backgroundcolor-menu3;
+	background-color: $backgroundcolor-menu4;
+	font-family: $policeMenu3;
+	font-size: 20px;
 }
 h2 {
 	@include degrade;
 	background-image: linear-gradient(
 		to right,
-		rgb(35, 63, 219),
-		rgb(29, 137, 251)
+		rgb(74, 147, 59),
+		rgb(187, 245, 127)
 	);
 }
 
 .menuOne {
-	@include dish;
+	@include menuFlex;
 }
 
 .menuTwo {
-	@include dish;
+	@include menuFlex;
 }
 
-.dishThree {
-	margin-left: 89px;
+.menuThree {
+	@include menuFlex;
 }
 
 h2,
@@ -97,4 +99,24 @@ a {
 	100% {
 		transform: translate(1px, -2px) rotate(-1deg);
 	}
+}
+
+.gauche {
+	@include traits;
+	@include degrade;
+	background: linear-gradient(to right, rgb(74, 147, 59), rgb(187, 245, 127));
+	clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+	margin-right: 10px;
+}
+
+.droite {
+	@include traits;
+	@include degrade;
+	background: linear-gradient(to right, rgb(187, 245, 127), rgb(74, 147, 59));
+	clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+	margin-left: 10px;
+}
+
+.titleFlex {
+	@include titleFlex;
 }

@@ -6,16 +6,12 @@
 
 @mixin menuPage {
 	width: 800px;
-	height: 750px;
+	height: 1050px;
 	box-shadow: 1px 1px 12px #555;
 	margin: auto;
+	padding-top: 15px;
+	line-height: 2;
 }
-
-@mixin dishFlex {
-	display: flex;
-	justify-content: space-around;
-}
-
 @mixin body {
 	margin: auto;
 }
@@ -32,7 +28,9 @@
 
 @mixin menuFlex {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-left: 70px;
+	margin-right: 70px;
 }
 
 @mixin colornav {
@@ -42,16 +40,25 @@
 
 @mixin colornavHome {
 	text-decoration: none;
-	color: black;
 }
 
 @mixin degrade {
 	color: transparent;
 	background-clip: text;
 	-webkit-background-clip: text;
-	font-size: 50px;
 }
 
 @mixin titleCenter {
 	text-align: center;
+}
+
+@mixin traits {
+	width: 250px;
+	height: 5px;
+}
+
+@mixin titleFlex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

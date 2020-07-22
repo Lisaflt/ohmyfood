@@ -2,7 +2,7 @@ $header_footer: #19a083;
 $color-nav: rgb(249, 203, 69);
 $backgroundcolor-menu1: #fcdfdb;
 $backgroundcolor-menu2: rgb(254, 245, 254);
-$backgroundcolor-menu3: rgb(249, 249, 249);
+$backgroundcolor-menu3: rgb(237, 249, 249);
 $backgroundcolor-menu4: #fdfffd;
 
 $policeHome: "Montserrat";
@@ -18,6 +18,30 @@ $policeHome: "Montserrat";
 	src: url("Itim-Regular.ttf") format ("trueType");
 }
 
+@font-face {
+	font-family: "Kalam-Light";
+	src: url("Kalam-Light.ttf") format ("trueType");
+}
+
+@font-face {
+	font-family: "CroissantOne-Regular";
+	src: url("CroissantOne-Regular.ttf") format ("trueType");
+}
+
+@font-face {
+	font-family: "DancingScript-Regular";
+	src: url("DancingScript-Regular.ttf") format ("trueType");
+}
+
+@font-face {
+	font-family: "Satisfy-Regular";
+	src: url("Satisfy-Regular.ttf") format ("trueType");
+}
+
 $policeMenu1: "blackHand_TRIAL";
 
-$policeDish1: "Itim-Regular";
+$policeTitleMenu1: "Kalam-Light";
+
+$policeTitleMenu2: "CroissantOne-Regular";
+
+$policeMenu3: "DancingScript-Regular";

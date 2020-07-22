@@ -8,6 +8,26 @@
   src: url("Itim-Regular.ttf") format "trueType";
 }
 
+@font-face {
+  font-family: "Kalam-Light";
+  src: url("Kalam-Light.ttf") format "trueType";
+}
+
+@font-face {
+  font-family: "CroissantOne-Regular";
+  src: url("CroissantOne-Regular.ttf") format "trueType";
+}
+
+@font-face {
+  font-family: "DancingScript-Regular";
+  src: url("DancingScript-Regular.ttf") format "trueType";
+}
+
+@font-face {
+  font-family: "Satisfy-Regular";
+  src: url("Satisfy-Regular.ttf") format "trueType";
+}
+
 body,
 html {
   margin: auto;
@@ -45,40 +65,52 @@ footer {
 
 .menu {
   width: 800px;
-  height: 750px;
+  height: 1050px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   margin: auto;
+  padding-top: 15px;
+  line-height: 2;
   background-color: #fef5fe;
+  font-size: 20px;
 }
 
 h2 {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  font-size: 50px;
   background-image: -webkit-gradient(linear, left top, right top, from(#e38930), to(#8f5bfd));
   background-image: linear-gradient(to right, #e38930, #8f5bfd);
+  font-family: "CroissantOne-Regular";
 }
 
 .menuOne {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+  color: #e38930;
 }
 
 .menuTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+  color: #a56799;
 }
 
 .dishThree {
-  margin-left: 89px;
+  padding-left: 70px;
+  color: #6e4ccc;
 }
 
 h2,
@@ -202,5 +234,111 @@ a {
     -webkit-transform: translate(1px, -2px) rotate(-1deg);
             transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+
+h3 {
+  background: linear-gradient(to top, #e38930 0%, #e38930 1px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 1s;
+  transition: background-size 1s;
+}
+
+h3:hover {
+  background-size: 100% 100%;
+}
+
+.gauche {
+  width: 250px;
+  height: 5px;
+  background: black;
+  -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+          clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+  margin-right: 10px;
+  background: #e38930;
+}
+
+.droite {
+  width: 250px;
+  height: 5px;
+  background: #e38930;
+  -webkit-clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+          clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+  margin-left: 10px;
+}
+
+.titleFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e38930;
+}
+
+.gauche2 {
+  width: 250px;
+  height: 5px;
+  -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+          clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+  margin-right: 10px;
+  background: #a56799;
+}
+
+.droite2 {
+  width: 250px;
+  height: 5px;
+  background: #a56799;
+  -webkit-clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+          clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+  margin-left: 10px;
+}
+
+.titleFlex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #a56799;
+}
+
+.gauche3 {
+  width: 250px;
+  height: 5px;
+  background: black;
+  -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+          clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+  margin-right: 10px;
+  background: #6e4ccc;
+}
+
+.droite3 {
+  width: 250px;
+  height: 5px;
+  background: #6e4ccc;
+  -webkit-clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+          clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+  margin-left: 10px;
+}
+
+.titleFlex3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6e4ccc;
 }
 /*# sourceMappingURL=menu2.css.map */

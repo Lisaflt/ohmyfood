@@ -7,6 +7,7 @@ html {
 
 main {
 	@include mainMenu;
+	color: rgb(61, 19, 25);
 }
 
 @import "./layout/header";
@@ -16,34 +17,32 @@ main {
 .menu {
 	@include menuPage;
 	background-color: $backgroundcolor-menu1;
+	font-family: "Satisfy-Regular";
 }
 
 .icone {
 	@include degrade;
-	font-size: 70px;
+	font-size: 90px;
 	display: flex;
 	justify-content: center;
 	padding-top: 40px;
 	background-image: linear-gradient(
 		to right,
-		rgb(227, 137, 48),
-		rgb(143, 91, 253)
+		rgb(234, 80, 95),
+		rgb(240, 144, 105)
 	);
 }
 
 .menuOne {
-	@include dishFlex;
-	font-family: $policeDish1;
+	@include menuFlex;
 }
 
 .menuTwo {
-	@include dishFlex;
-	font-family: $policeDish1;
+	@include menuFlex;
 }
 
 .dishThree {
-	margin-left: 89px;
-	font-family: $policeDish1;
+	margin-left: 67px;
 }
 
 h2,
@@ -104,4 +103,38 @@ a {
 	100% {
 		transform: translate(1px, -2px) rotate(-1deg);
 	}
+}
+
+.gauche {
+	@include traits;
+	background: rgb(61, 19, 25);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	margin-right: 40px;
+}
+
+.droite {
+	@include traits;
+	background: rgb(61, 19, 25);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	margin-left: 40px;
+}
+
+.titleFlex {
+	@include titleFlex;
+}
+
+.iconeBottom {
+	display: flex;
+	justify-content: center;
+}
+
+.icone2 {
+	@include degrade;
+	background-image: linear-gradient(
+		to right,
+		rgb(234, 80, 95),
+		rgb(240, 144, 105)
+	);
+	font-size: 50px;
+	margin-right: 10px;
 }

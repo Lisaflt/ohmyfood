@@ -3,6 +3,31 @@
   src: url("blackHand_TRIAL.otf") format "OpenTypeFont", url "blackHand_TRIAL.ttf" format "truetype";
 }
 
+@font-face {
+  font-family: "Itim-Regular";
+  src: url("Itim-Regular.ttf") format "trueType";
+}
+
+@font-face {
+  font-family: "Kalam-Light";
+  src: url("Kalam-Light.ttf") format "trueType";
+}
+
+@font-face {
+  font-family: "CroissantOne-Regular";
+  src: url("CroissantOne-Regular.ttf") format "trueType";
+}
+
+@font-face {
+  font-family: "DancingScript-Regular";
+  src: url("DancingScript-Regular.ttf") format "trueType";
+}
+
+@font-face {
+  font-family: "Satisfy-Regular";
+  src: url("Satisfy-Regular.ttf") format "trueType";
+}
+
 body,
 html {
   margin: auto;
@@ -40,42 +65,57 @@ footer {
 
 .menu {
   width: 800px;
-  height: 750px;
+  height: 1050px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   margin: auto;
-  background-color: #f9f9f9;
+  padding-top: 15px;
+  line-height: 2;
+  background-color: #edf9f9;
+  font-family: "DancingScript-Regular";
+  font-size: 20px;
 }
 
 h2 {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  font-size: 50px;
   background-image: -webkit-gradient(linear, left top, right top, from(#233fdb), to(#1d89fb));
   background-image: linear-gradient(to right, #233fdb, #1d89fb);
+  font-size: 40px;
 }
 
 .menuOne {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-family: "serif";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .menuTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-family: "serif";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
-.dishThree {
-  margin-left: 89px;
+.menuThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 h2,
@@ -199,5 +239,71 @@ a {
     -webkit-transform: translate(1px, -2px) rotate(-1deg);
             transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+
+.gauche {
+  width: 250px;
+  height: 5px;
+  background: blue;
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+          clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  margin-right: 10px;
+}
+
+.droite {
+  width: 250px;
+  height: 5px;
+  background: blue;
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+          clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  margin-left: 10px;
+}
+
+.gauche2 {
+  width: 250px;
+  height: 5px;
+  background: #0770f3;
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+          clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  margin-right: 10px;
+}
+
+.droite2 {
+  width: 250px;
+  height: 5px;
+  background: #0770f3;
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+          clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  margin-right: 10px;
+}
+
+.gauche3 {
+  width: 250px;
+  height: 5px;
+  background: #349df9;
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+          clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  margin-right: 10px;
+}
+
+.droite3 {
+  width: 250px;
+  height: 5px;
+  background: #349df9;
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+          clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  margin-right: 10px;
+}
+
+.titleFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=menu3.css.map */

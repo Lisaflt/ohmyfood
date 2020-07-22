@@ -8,6 +8,26 @@
   src: url("Itim-Regular.ttf") format "trueType";
 }
 
+@font-face {
+  font-family: "Kalam-Light";
+  src: url("Kalam-Light.ttf") format "trueType";
+}
+
+@font-face {
+  font-family: "CroissantOne-Regular";
+  src: url("CroissantOne-Regular.ttf") format "trueType";
+}
+
+@font-face {
+  font-family: "DancingScript-Regular";
+  src: url("DancingScript-Regular.ttf") format "trueType";
+}
+
+@font-face {
+  font-family: "Satisfy-Regular";
+  src: url("Satisfy-Regular.ttf") format "trueType";
+}
+
 body,
 html {
   margin: auto;
@@ -16,6 +36,7 @@ html {
 main {
   margin-top: 50px;
   margin-bottom: 100px;
+  color: #3d1319;
 }
 
 header {
@@ -45,19 +66,21 @@ footer {
 
 .menu {
   width: 800px;
-  height: 750px;
+  height: 1050px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   margin: auto;
+  padding-top: 15px;
+  line-height: 2;
   background-color: #fcdfdb;
+  font-family: "Satisfy-Regular";
 }
 
 .icone {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  font-size: 50px;
-  font-size: 70px;
+  font-size: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,31 +88,34 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 40px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#e38930), to(#8f5bfd));
-  background-image: linear-gradient(to right, #e38930, #8f5bfd);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ea505f), to(#f09069));
+  background-image: linear-gradient(to right, #ea505f, #f09069);
 }
 
 .menuOne {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-family: "Itim-Regular";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .menuTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-family: "Itim-Regular";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .dishThree {
-  margin-left: 89px;
-  font-family: "Itim-Regular";
+  margin-left: 67px;
 }
 
 h2,
@@ -212,5 +238,54 @@ a {
     -webkit-transform: translate(1px, -2px) rotate(-1deg);
             transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+
+.gauche {
+  width: 250px;
+  height: 5px;
+  background: #3d1319;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin-right: 40px;
+}
+
+.droite {
+  width: 250px;
+  height: 5px;
+  background: #3d1319;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin-left: 40px;
+}
+
+.titleFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iconeBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icone2 {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ea505f), to(#f09069));
+  background-image: linear-gradient(to right, #ea505f, #f09069);
+  font-size: 50px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=menu1.css.map */
