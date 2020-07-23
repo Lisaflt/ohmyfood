@@ -28,120 +28,6 @@
   src: url("Satisfy-Regular.ttf") format "trueType";
 }
 
-body,
-html {
-  margin: auto;
-}
-
-main {
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-header {
-  background: #19a083;
-  text-align: center;
-  color: #f9cb45;
-  font-size: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Montserrat";
-}
-
-footer {
-  background: #19a083;
-  color: #f9cb45;
-  margin-top: 20px;
-  font-family: "Montserrat";
-  font-size: 20px;
-  position: fixed;
-  width: 100%;
-  bottom: 0px;
-}
-
-.menu {
-  width: 800px;
-  height: 1050px;
-  -webkit-box-shadow: 1px 1px 12px #555;
-          box-shadow: 1px 1px 12px #555;
-  margin: auto;
-  padding-top: 15px;
-  line-height: 2;
-  background-color: #fef5fe;
-  font-size: 20px;
-}
-
-h2 {
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-image: -webkit-gradient(linear, left top, right top, from(#e38930), to(#8f5bfd));
-  background-image: linear-gradient(to right, #e38930, #8f5bfd);
-  font-family: "CroissantOne-Regular";
-}
-
-.menuOne {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
-  color: #e38930;
-}
-
-.menuTwo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
-  color: #a56799;
-}
-
-.dishThree {
-  padding-left: 70px;
-  color: #6e4ccc;
-}
-
-h2,
-h3,
-h4 {
-  text-align: center;
-}
-
-.mentionsLegales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0px 20px 0px 20px;
-}
-
-a {
-  color: #f9cb45;
-  text-decoration: none;
-}
-
-.shakeRight:hover,
-.shakeLeft:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
 @-webkit-keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -236,6 +122,120 @@ a {
   }
 }
 
+body,
+html {
+  margin: auto;
+}
+
+main {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+header {
+  background: #19a083;
+  text-align: center;
+  color: #f9cb45;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat";
+}
+
+footer {
+  background: #19a083;
+  color: #f9cb45;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+.menu {
+  width: 800px;
+  height: 1070px;
+  -webkit-box-shadow: 1px 1px 12px #555;
+          box-shadow: 1px 1px 12px #555;
+  margin: auto;
+  padding-top: 15px;
+  line-height: 2;
+  background-color: #fef5fe;
+  font-size: 20px;
+}
+
+h2 {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e38930), to(#8f5bfd));
+  background-image: linear-gradient(to right, #e38930, #8f5bfd);
+  font-family: "CroissantOne-Regular";
+}
+
+.menuOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+  color: #e38930;
+}
+
+.menuTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+  color: #a56799;
+}
+
+.dishThree {
+  padding-left: 70px;
+  color: #6e4ccc;
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+.mentionsLegales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+}
+
+a {
+  color: #f9cb45;
+  text-decoration: none;
+}
+
+.shakeRight:hover,
+.shakeLeft:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 h3 {
   background: linear-gradient(to top, #e38930 0%, #e38930 1px, transparent 5px) no-repeat;
   background-size: 0 100%;
@@ -247,17 +247,16 @@ h3:hover {
   background-size: 100% 100%;
 }
 
-.gauche {
+.traitGauche {
   width: 250px;
   height: 5px;
-  background: black;
   -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
           clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
   margin-right: 10px;
   background: #e38930;
 }
 
-.droite {
+.traitDroite {
   width: 250px;
   height: 5px;
   background: #e38930;

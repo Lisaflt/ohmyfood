@@ -5,8 +5,6 @@ $backgroundcolor-menu2: rgb(254, 245, 254);
 $backgroundcolor-menu3: rgb(237, 249, 249);
 $backgroundcolor-menu4: #fdfffd;
 
-$policeHome: "Montserrat";
-
 @font-face {
 	font-family: "blackHand_TRIAL";
 	src: url("blackHand_TRIAL.otf") format ("OpenTypeFont"),
@@ -37,6 +35,8 @@ $policeHome: "Montserrat";
 	font-family: "Satisfy-Regular";
 	src: url("Satisfy-Regular.ttf") format ("trueType");
 }
+
+$policeHome: "Montserrat";
 
 $policeMenu1: "blackHand_TRIAL";
 
