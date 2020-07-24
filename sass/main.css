@@ -28,6 +28,11 @@
   src: url("Satisfy-Regular.ttf") format "trueType";
 }
 
+@font-face {
+  font-family: "Niconne";
+  src: url("Niconne-Regular.ttf") format "trueType";
+}
+
 @-webkit-keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -152,71 +157,75 @@ body {
 }
 
 main {
-  max-width: 710px;
+  max-width: 900px;
   margin: auto;
+  height: 1200px;
 }
 
-.conteneurLeft {
-  width: 280px;
-  height: 350px;
+h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.menuLeft {
+  width: 390px;
+  height: 500px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   background-color: #fcdfdb;
   font-family: "Satisfy-Regular";
+  text-align: center;
 }
 
-.conteneurRight {
-  width: 280px;
-  height: 350px;
+.menuRight {
+  width: 390px;
+  height: 500px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   background-color: #fef5fe;
   margin-left: 60px;
   font-family: "CroissantOne-Regular";
+  text-align: center;
 }
 
 .menuBottomLeft {
-  width: 280px;
-  height: 350px;
+  width: 390px;
+  height: 500px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   background-color: #edf9f9;
   font-family: "DancingScript-Regular";
+  margin-top: 30px;
+  text-align: center;
 }
 
 .menuBottomRight {
-  width: 280px;
-  height: 350px;
+  width: 390px;
+  height: 500px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   background-color: #fdfffd;
   margin-left: 60px;
   font-family: "DancingScript-Regular";
-}
-
-#conteneurTop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-top: 40px;
-}
-
-.conteneurBottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
   margin-top: 30px;
-  padding-bottom: 40px;
+  text-align: center;
 }
 
 .mentionsLegales {
@@ -229,27 +238,31 @@ main {
   margin: 0px 20px 0px 20px;
 }
 
-h2 {
-  text-align: center;
-  margin-top: 80px;
+.zoom {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
 }
 
-h2:hover {
+.zoom:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  opacity: 1;
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  transition: -webkit-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
-}
-
-a {
-  text-decoration: none;
+  opacity: 0.7;
 }
 
 .titleMenu1 {
   color: #3d1319;
+  font-size: 35px;
+  margin-top: 180px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .titleMenu2 {
@@ -258,6 +271,8 @@ a {
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left top, right top, from(#ea505f), to(#f09069));
   background-image: linear-gradient(to right, #ea505f, #f09069);
+  font-size: 30px;
+  margin-top: 180px;
 }
 
 .titleMenu3 {
@@ -266,6 +281,8 @@ a {
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left top, right top, from(#1440df), to(#2891f0));
   background-image: linear-gradient(to right, #1440df, #2891f0);
+  font-size: 35px;
+  margin-top: 180px;
 }
 
 .titleMenu4 {
@@ -274,6 +291,8 @@ a {
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left top, right top, from(#4a933a), to(#bbf57e));
   background-image: linear-gradient(to right, #4a933a, #bbf57e);
+  font-size: 35px;
+  margin-top: 180px;
 }
 
 .titleMenu4 {
@@ -286,13 +305,46 @@ a {
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
+.h3menu1 {
+  font-size: 45px;
+  font-family: "Niconne";
+  color: #3d1319;
+}
+
+.h3menu2 {
+  font-size: 45px;
+  font-family: "Niconne";
+  color: #e38930;
+}
+
+.h3menu3 {
+  font-size: 45px;
+  font-family: "Niconne";
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#233fdb), to(#1d89fb));
+  background-image: linear-gradient(to right, #233fdb, #1d89fb);
+}
+
+.h3menu4 {
+  font-size: 45px;
+  font-family: "Niconne";
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4a933b), to(#bbf57f));
+  background-image: linear-gradient(to right, #4a933b, #bbf57f);
+}
+
 .bouton {
   background-color: #19a083;
   max-width: 150px;
   color: yellow;
   font-family: "Montserrat";
   border-radius: 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 15px 150px 15px 35px;
+  font-size: 25px;
   margin-left: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,5 +360,23 @@ a {
           animation: shake 0.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+@media all and (max-width: 790px) {
+  body,
+  html,
+  main,
+  header {
+    margin: auto;
+  }
+  .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -9,53 +9,10 @@ body {
 
 main {
 	@include main;
+	height: 1200px;
 }
 
-.conteneurLeft {
-	@include menuHome;
-	background-color: $backgroundcolor-menu1;
-	font-family: "Satisfy-Regular";
-}
-
-.conteneurRight {
-	@include menuHome;
-	background-color: $backgroundcolor-menu2;
-	margin-left: 60px;
-	font-family: $policeTitleMenu2;
-}
-
-.menuBottomLeft {
-	@include menuHome;
-	background-color: $backgroundcolor-menu3;
-	font-family: $policeMenu3;
-}
-
-.menuBottomRight {
-	@include menuHome;
-	background-color: $backgroundcolor-menu4;
-	margin-left: 60px;
-	font-family: $policeMenu3;
-}
-
-#conteneurTop {
-	@include menuFlex;
-	margin-top: 40px;
-}
-
-.conteneurBottom {
-	@include menuFlex;
-	margin-top: 30px;
-	padding-bottom: 40px;
-}
-.mentionsLegales {
-	display: flex;
-	justify-content: space-between;
-	margin: 0px 20px 0px 20px;
-}
-
-h2 {
-	text-align: center;
-	margin-top: 80px;
+h1 {
 	&:hover {
 		transform: scale(1.2);
 		opacity: 1;
@@ -63,14 +20,68 @@ h2 {
 	}
 }
 
-a {
-	@include colornavHome;
+section {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.menuLeft {
+	@include menuHome;
+	background-color: $backgroundcolor-menu1;
+	font-family: "Satisfy-Regular";
+	text-align: center;
+}
+
+.menuRight {
+	@include menuHome;
+	background-color: $backgroundcolor-menu2;
+	margin-left: 60px;
+	font-family: $policeTitleMenu2;
+	text-align: center;
+}
+
+.menuBottomLeft {
+	@include menuHome;
+	background-color: $backgroundcolor-menu3;
+	font-family: $policeMenu3;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.menuBottomRight {
+	@include menuHome;
+	background-color: $backgroundcolor-menu4;
+	margin-left: 60px;
+	font-family: $policeMenu3;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.mentionsLegales {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 20px 0px 20px;
+}
+
+.zoom {
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 1000ms;
+	&:hover {
+		transform: scale(1.2);
+		opacity: 0.7;
+	}
 }
 
 .titleMenu1 {
 	color: rgb(61, 19, 25);
+	font-size: 35px;
+	margin-top: 180px;
 }
-
+a {
+	@include colornavHome;
+}
 .titleMenu2 {
 	@include degrade;
 	background-image: linear-gradient(
@@ -78,6 +89,8 @@ a {
 		rgb(234, 80, 95),
 		rgb(240, 144, 105)
 	);
+	font-size: 30px;
+	margin-top: 180px;
 }
 
 .titleMenu3 {
@@ -87,6 +100,8 @@ a {
 		rgb(20, 64, 223),
 		rgb(40, 145, 240)
 	);
+	font-size: 35px;
+	margin-top: 180px;
 }
 
 .titleMenu4 {
@@ -96,6 +111,8 @@ a {
 		rgb(74, 147, 58),
 		rgb(187, 245, 126)
 	);
+	font-size: 35px;
+	margin-top: 180px;
 }
 
 .titleMenu4 {
@@ -104,13 +121,48 @@ a {
 	transition: transform 300ms ease-in-out;
 }
 
+.h3menu1 {
+	font-size: 45px;
+	font-family: "Niconne";
+	color: rgb(61, 19, 25);
+}
+
+.h3menu2 {
+	font-size: 45px;
+	font-family: "Niconne";
+	color: rgb(227, 137, 48);
+}
+
+.h3menu3 {
+	font-size: 45px;
+	font-family: "Niconne";
+	@include degrade;
+	background-image: linear-gradient(
+		to right,
+		rgb(35, 63, 219),
+		rgb(29, 137, 251)
+	);
+}
+
+.h3menu4 {
+	font-size: 45px;
+	font-family: "Niconne";
+	@include degrade;
+	background-image: linear-gradient(
+		to right,
+		rgb(74, 147, 59),
+		rgb(187, 245, 127)
+	);
+}
+
 .bouton {
 	background-color: #19a083;
 	max-width: 150px;
 	color: yellow;
 	font-family: "Montserrat";
 	border-radius: 10px;
-	padding: 10px 10px 10px 10px;
+	padding: 15px 150px 15px 35px;
+	font-size: 25px;
 	margin-left: 500px;
 	display: flex;
 	justify-content: center;
@@ -118,4 +170,18 @@ a {
 .shakeRight:hover,
 .shakeLeft:hover {
 	@include shake;
+}
+
+@media all and (max-width: 790px) {
+	body,
+	html,
+	main,
+	header {
+		margin: auto;
+	}
+
+	.section {
+		flex-direction: column;
+		justify-content: center;
+	}
 }

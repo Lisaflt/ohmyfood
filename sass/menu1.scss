@@ -14,6 +14,13 @@ main {
 
 @import "./layout/footer";
 
+a {
+	&:hover {
+		transform: scale(1.2);
+		opacity: 1;
+		transition: transform 400ms ease-in-out;
+	}
+}
 .menu {
 	@include menuPage;
 	background-color: $backgroundcolor-menu1;
@@ -33,6 +40,16 @@ main {
 	);
 }
 
+.flex {
+	padding-left: 90px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.price {
+	text-align: right;
+}
+
 .menuOne {
 	@include menuFlex;
 }
@@ -42,7 +59,7 @@ main {
 }
 
 .dishThree {
-	margin-left: 67px;
+	padding-left: 90px;
 }
 
 h2,
@@ -101,4 +118,40 @@ a {
 	);
 	font-size: 50px;
 	margin-right: 10px;
+}
+
+h3 {
+	background: linear-gradient(to top, #3d1319 0%, #3d1319 5%, transparent 5.01%)
+		no-repeat left bottom/0 100%;
+
+	@include animUnderline;
+}
+
+h3:hover {
+	background-size: 100% 100%;
+}
+
+@media all and (max-width: 790px) {
+	body,
+	html,
+	main,
+	header {
+		margin: auto;
+	}
+
+	.menu {
+		margin: auto;
+		height: 1900px;
+		width: 650px;
+	}
+
+	.flex {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.menuTwo {
+		flex-direction: column;
+		align-items: center;
+	}
 }

@@ -28,6 +28,11 @@
   src: url("Satisfy-Regular.ttf") format "trueType";
 }
 
+@font-face {
+  font-family: "Niconne";
+  src: url("Niconne-Regular.ttf") format "trueType";
+}
+
 @-webkit-keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -159,12 +164,13 @@ footer {
 
 .menu {
   width: 800px;
-  height: 1070px;
+  height: 1370px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   margin: auto;
   padding-top: 15px;
   line-height: 2;
+  font-size: 20px;
   background-color: #fdfffd;
   font-family: "DancingScript-Regular";
   font-size: 20px;
@@ -178,37 +184,51 @@ h2 {
   background-image: linear-gradient(to right, #4a933b, #bbf57f);
 }
 
-.menuOne {
+.flex {
+  padding-left: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
+}
+
+.price {
+  text-align: right;
+}
+
+.menuOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 730px;
 }
 
 .menuTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 730px;
 }
 
 .menuThree {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 730px;
 }
 
 h2,
@@ -276,5 +296,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+h3 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(5%, #000000), color-stop(5.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #000000 0%, #000000 5%, transparent 5.01%) no-repeat left bottom/0 100%;
+  background-size: 0 100%;
+  -webkit-transition: background-size 1s;
+  transition: background-size 1s;
+}
+
+h3:hover {
+  background-size: 100% 100%;
 }
 /*# sourceMappingURL=menu4.css.map */

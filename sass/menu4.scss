@@ -28,6 +28,15 @@ h2 {
 	);
 }
 
+.flex {
+	padding-left: 90px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.price {
+	text-align: right;
+}
 .menuOne {
 	@include menuFlex;
 }
@@ -79,4 +88,20 @@ a {
 
 .titleFlex {
 	@include titleFlex;
+}
+
+h3 {
+	background: linear-gradient(
+			to top,
+			(#000000) 0%,
+			(#000000) 5%,
+			transparent 5.01%
+		)
+		no-repeat left bottom/0 100%;
+
+	@include animUnderline;
+}
+
+h3:hover {
+	background-size: 100% 100%;
 }
