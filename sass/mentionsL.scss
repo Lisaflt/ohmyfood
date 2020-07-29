@@ -1,0 +1,18 @@
+@import "./abstracts/variables", "./abstracts/mixins";
+
+body,
+html {
+	@include body;
+}
+
+main {
+	@include mainMenu;
+}
+
+@import "./layout/header";
+
+@import "./layout/footer";
+
+a {
+	@include colornav;
+}

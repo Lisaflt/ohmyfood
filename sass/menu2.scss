@@ -13,10 +13,11 @@ main {
 
 @import "./layout/footer";
 
-.menu {
+section {
 	@include menuPage;
 	background-color: $backgroundcolor-menu2;
 	font-size: 20px;
+	height: 1100px;
 }
 
 h2 {
@@ -64,11 +65,6 @@ a {
 	@include colornav;
 }
 
-.shakeRight:hover,
-.shakeLeft:hover {
-	@include shake;
-}
-
 h3 {
 	background: linear-gradient(to top, #e38930 0%, #e38930 1px, transparent 3px)
 		no-repeat;
@@ -98,14 +94,14 @@ h3:hover {
 	color: rgb(227, 137, 48);
 }
 
-.gauche2 {
+.traitGauche2 {
 	@include traits;
 	clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
 	margin-right: 10px;
 	background: rgb(165, 103, 153);
 }
 
-.droite2 {
+.traitDroite2 {
 	@include traits;
 	background: rgb(165, 103, 153);
 	clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
@@ -117,7 +113,7 @@ h3:hover {
 	color: rgb(165, 103, 153);
 }
 
-.gauche3 {
+.traitGauche3 {
 	@include traits;
 	background: black;
 	clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
@@ -125,7 +121,7 @@ h3:hover {
 	background: rgb(110, 76, 204);
 }
 
-.droite3 {
+.traitDroite3 {
 	@include traits;
 	background: rgb(110, 76, 204);
 	clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);

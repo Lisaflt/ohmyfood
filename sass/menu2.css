@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "blackHand_TRIAL";
   src: url("blackHand_TRIAL.otf") format "OpenTypeFont", url "blackHand_TRIAL.ttf" format "truetype";
@@ -159,20 +160,35 @@ footer {
   font-size: 20px;
   position: fixed;
   width: 100%;
+  height: 8%;
   bottom: 0px;
-}
-
-.mentionsLegales {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0px 20px 0px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.menu {
+footer a:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.mentionsLégales {
+  margin-left: 5px;
+}
+
+.contact {
+  margin-right: 5px;
+}
+
+section {
   width: 800px;
   height: 1370px;
   -webkit-box-shadow: 1px 1px 12px #555;
@@ -183,6 +199,7 @@ footer {
   font-size: 20px;
   background-color: #fef5fe;
   font-size: 20px;
+  height: 1100px;
 }
 
 h2 {
@@ -248,14 +265,6 @@ a {
   text-decoration: none;
 }
 
-.shakeRight:hover,
-.shakeLeft:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
 h3 {
   background: linear-gradient(to top, #e38930 0%, #e38930 1px, transparent 3px) no-repeat;
   background-size: 0 100%;
@@ -298,7 +307,7 @@ h3:hover {
   color: #e38930;
 }
 
-.gauche2 {
+.traitGauche2 {
   width: 250px;
   height: 5px;
   -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
@@ -307,7 +316,7 @@ h3:hover {
   background: #a56799;
 }
 
-.droite2 {
+.traitDroite2 {
   width: 250px;
   height: 5px;
   background: #a56799;
@@ -329,7 +338,7 @@ h3:hover {
   color: #a56799;
 }
 
-.gauche3 {
+.traitGauche3 {
   width: 250px;
   height: 5px;
   background: black;
@@ -339,7 +348,7 @@ h3:hover {
   background: #6e4ccc;
 }
 
-.droite3 {
+.traitDroite3 {
   width: 250px;
   height: 5px;
   background: #6e4ccc;

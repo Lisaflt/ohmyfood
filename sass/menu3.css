@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "blackHand_TRIAL";
   src: url("blackHand_TRIAL.otf") format "OpenTypeFont", url "blackHand_TRIAL.ttf" format "truetype";
@@ -159,20 +160,35 @@ footer {
   font-size: 20px;
   position: fixed;
   width: 100%;
+  height: 8%;
   bottom: 0px;
-}
-
-.mentionsLegales {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0px 20px 0px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.menu {
+footer a:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.mentionsLégales {
+  margin-left: 5px;
+}
+
+.contact {
+  margin-right: 5px;
+}
+
+section {
   width: 800px;
   height: 1370px;
   -webkit-box-shadow: 1px 1px 12px #555;
@@ -184,6 +200,7 @@ footer {
   background-color: #edf9f9;
   font-family: "DancingScript-Regular";
   font-size: 20px;
+  height: 1200px;
 }
 
 h2 {
@@ -209,29 +226,7 @@ h2 {
   text-align: right;
 }
 
-.menuOne {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 730px;
-}
-
-.menuTwo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 730px;
-}
-
-.menuThree {
+article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
