@@ -152,6 +152,16 @@ footer {
   bottom: 0px;
 }
 
+.mentionsLegales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+}
+
 body {
   margin: auto;
 }
@@ -160,6 +170,10 @@ main {
   max-width: 900px;
   margin: auto;
   height: 1200px;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1:hover {
@@ -189,9 +203,19 @@ section {
   height: 500px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
+  text-align: center;
   background-color: #fcdfdb;
   font-family: "Satisfy-Regular";
-  text-align: center;
+}
+
+.icone2 {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ea505f), to(#f09069));
+  background-image: linear-gradient(to right, #ea505f, #f09069);
+  font-size: 50px;
+  margin-right: 10px;
 }
 
 .menuRight {
@@ -199,10 +223,9 @@ section {
   height: 500px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
-  background-color: #fef5fe;
-  margin-left: 60px;
-  font-family: "CroissantOne-Regular";
   text-align: center;
+  background-color: #fef5fe;
+  font-family: "CroissantOne-Regular";
 }
 
 .menuBottomLeft {
@@ -210,10 +233,10 @@ section {
   height: 500px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
+  text-align: center;
   background-color: #edf9f9;
   font-family: "DancingScript-Regular";
   margin-top: 30px;
-  text-align: center;
 }
 
 .menuBottomRight {
@@ -221,21 +244,10 @@ section {
   height: 500px;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
+  text-align: center;
   background-color: #fdfffd;
-  margin-left: 60px;
   font-family: "DancingScript-Regular";
   margin-top: 30px;
-  text-align: center;
-}
-
-.mentionsLegales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0px 20px 0px 20px;
 }
 
 .zoom {
@@ -259,10 +271,6 @@ section {
   color: #3d1319;
   font-size: 35px;
   margin-top: 180px;
-}
-
-a {
-  text-decoration: none;
 }
 
 .titleMenu2 {
@@ -337,21 +345,55 @@ a {
   background-image: linear-gradient(to right, #4a933b, #bbf57f);
 }
 
-.bouton {
-  background-color: #19a083;
-  max-width: 150px;
-  color: yellow;
-  font-family: "Montserrat";
-  border-radius: 10px;
-  padding: 15px 150px 15px 35px;
-  font-size: 25px;
-  margin-left: 500px;
+.prochainement {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.bouton {
+  height: 45px;
+  width: 350px;
+  position: relative;
+  background-color: #19a083;
+  color: yellow;
+  font-family: "Montserrat";
+  border-radius: 10px;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.bouton1 {
+  background-color: yellow;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.bouton2 {
+  background-color: yellow;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.bouton3 {
+  background-color: yellow;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
 }
 
 .shakeRight:hover,
@@ -362,7 +404,38 @@ a {
           animation-iteration-count: infinite;
 }
 
-@media all and (max-width: 790px) {
+@media all and (max-width: 920px) {
+  body,
+  html,
+  main,
+  header,
+  footer {
+    margin: auto;
+  }
+  .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5px;
+  }
+  .menuRight,
+  .menuLeft,
+  .menuBottomLeft,
+  .menuBottomRight {
+    margin: auto;
+    margin-top: 20px;
+    width: 340px;
+  }
+  .prochainement {
+    margin-bottom: 100px;
+  }
+}
+
+@media all and (max-width: 520px) {
   body,
   html,
   main,
@@ -377,6 +450,18 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 5px;
+  }
+  .menuRight,
+  .menuLeft,
+  .menuBottomLeft,
+  .menuBottomRight {
+    margin: auto;
+    margin-top: 20px;
+    width: 340px;
+  }
+  .prochainement {
+    margin-bottom: 100px;
   }
 }
 /*# sourceMappingURL=main.css.map */

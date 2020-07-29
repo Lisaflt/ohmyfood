@@ -2,6 +2,7 @@
 	width: 390px;
 	height: 500px;
 	box-shadow: 1px 1px 12px #555;
+	text-align: center;
 }
 
 @mixin menuPage {
@@ -110,4 +111,18 @@
 @mixin animUnderline {
 	background-size: 0 100%;
 	transition: background-size 1s;
+}
+
+@mixin bouton {
+	background-color: yellow;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+}
+
+@mixin points {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	transform: scale(0.7) translateY(10px);
 }

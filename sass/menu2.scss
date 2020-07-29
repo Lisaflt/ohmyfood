@@ -18,6 +18,7 @@ main {
 	background-color: $backgroundcolor-menu2;
 	font-size: 20px;
 }
+
 h2 {
 	@include degrade;
 	background-image: linear-gradient(
@@ -57,12 +58,6 @@ h2,
 h3,
 h4 {
 	@include titleCenter;
-}
-
-.mentionsLegales {
-	display: flex;
-	justify-content: space-between;
-	margin: 0px 20px 0px 20px;
 }
 
 a {

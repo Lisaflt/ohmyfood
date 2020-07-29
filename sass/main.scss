@@ -12,6 +12,10 @@ main {
 	height: 1200px;
 }
 
+a {
+	@include colornavHome;
+}
+
 h1 {
 	&:hover {
 		transform: scale(1.2);
@@ -30,15 +34,23 @@ section {
 	@include menuHome;
 	background-color: $backgroundcolor-menu1;
 	font-family: "Satisfy-Regular";
-	text-align: center;
+}
+
+.icone2 {
+	@include degrade;
+	background-image: linear-gradient(
+		to right,
+		rgb(234, 80, 95),
+		rgb(240, 144, 105)
+	);
+	font-size: 50px;
+	margin-right: 10px;
 }
 
 .menuRight {
 	@include menuHome;
 	background-color: $backgroundcolor-menu2;
-	margin-left: 60px;
 	font-family: $policeTitleMenu2;
-	text-align: center;
 }
 
 .menuBottomLeft {
@@ -46,22 +58,13 @@ section {
 	background-color: $backgroundcolor-menu3;
 	font-family: $policeMenu3;
 	margin-top: 30px;
-	text-align: center;
 }
 
 .menuBottomRight {
 	@include menuHome;
 	background-color: $backgroundcolor-menu4;
-	margin-left: 60px;
 	font-family: $policeMenu3;
 	margin-top: 30px;
-	text-align: center;
-}
-
-.mentionsLegales {
-	display: flex;
-	justify-content: space-between;
-	margin: 0px 20px 0px 20px;
 }
 
 .zoom {
@@ -79,9 +82,7 @@ section {
 	font-size: 35px;
 	margin-top: 180px;
 }
-a {
-	@include colornavHome;
-}
+
 .titleMenu2 {
 	@include degrade;
 	background-image: linear-gradient(
@@ -155,24 +156,71 @@ a {
 	);
 }
 
-.bouton {
-	background-color: #19a083;
-	max-width: 150px;
-	color: yellow;
-	font-family: "Montserrat";
-	border-radius: 10px;
-	padding: 15px 150px 15px 35px;
-	font-size: 25px;
-	margin-left: 500px;
+.prochainement {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 }
+.bouton {
+	height: 45px;
+	width: 350px;
+	position: relative;
+	background-color: #19a083;
+	color: yellow;
+	font-family: "Montserrat";
+	border-radius: 10px;
+	font-size: 25px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.bouton1 {
+	@include bouton;
+}
+.bouton2 {
+	@include bouton;
+}
+.bouton3 {
+	@include bouton;
+}
+
 .shakeRight:hover,
 .shakeLeft:hover {
 	@include shake;
 }
 
-@media all and (max-width: 790px) {
+@media all and (max-width: 920px) {
+	body,
+	html,
+	main,
+	header,
+	footer {
+		margin: auto;
+	}
+
+	.section {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 5px;
+	}
+
+	.menuRight,
+	.menuLeft,
+	.menuBottomLeft,
+	.menuBottomRight {
+		margin: auto;
+		margin-top: 20px;
+		width: 340px;
+	}
+
+	.prochainement {
+		margin-bottom: 100px;
+	}
+}
+
+@media all and (max-width: 520px) {
 	body,
 	html,
 	main,
@@ -183,5 +231,19 @@ a {
 	.section {
 		flex-direction: column;
 		justify-content: center;
+		margin-top: 5px;
+	}
+
+	.menuRight,
+	.menuLeft,
+	.menuBottomLeft,
+	.menuBottomRight {
+		margin: auto;
+		margin-top: 20px;
+		width: 340px;
+	}
+
+	.prochainement {
+		margin-bottom: 100px;
 	}
 }
