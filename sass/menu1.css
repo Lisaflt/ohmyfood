@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@400;500;600&family=Itim&family=Kalam&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Devonshire&family=Kaushan+Script&family=Nanum+Pen+Script&family=Parisienne&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @-webkit-keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -110,7 +107,7 @@ main {
   font-size: 20px;
   padding: 60px;
   background-color: #fcdfdb;
-  font-family: "Satisfy-Regular";
+  font-family: "Satisfy";
 }
 
 header {

@@ -11,7 +11,7 @@ main {
 	@include menuPage;
 	padding: 60px;
 	background-color: $backgroundcolor-menu1;
-	font-family: "Satisfy-Regular";
+	font-family: $policeMenu3_4;
 }
 
 @import "./layout/header";
