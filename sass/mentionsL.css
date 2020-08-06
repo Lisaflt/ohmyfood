@@ -1,39 +1,7 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "blackHand_TRIAL";
-  src: url("blackHand_TRIAL.otf") format "OpenTypeFont", url "blackHand_TRIAL.ttf" format "truetype";
-}
-
-@font-face {
-  font-family: "Itim-Regular";
-  src: url("Itim-Regular.ttf") format "trueType";
-}
-
-@font-face {
-  font-family: "Kalam-Light";
-  src: url("Kalam-Light.ttf") format "trueType";
-}
-
-@font-face {
-  font-family: "CroissantOne-Regular";
-  src: url("CroissantOne-Regular.ttf") format "trueType";
-}
-
-@font-face {
-  font-family: "DancingScript-Regular";
-  src: url("DancingScript-Regular.ttf") format "trueType";
-}
-
-@font-face {
-  font-family: "Satisfy-Regular";
-  src: url("Satisfy-Regular.ttf") format "trueType";
-}
-
-@font-face {
-  font-family: "Niconne";
-  src: url("Niconne-Regular.ttf") format "trueType";
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@400;500;600&family=Itim&family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Devonshire&family=Kaushan+Script&family=Nanum+Pen+Script&family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @-webkit-keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -80,7 +48,6 @@
             transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-
 @keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -181,11 +148,11 @@ footer a:hover {
 }
 
 .mentionsLégales {
-  margin-left: 5px;
+  margin-left: 40px;
 }
 
 .contact {
-  margin-right: 5px;
+  margin-right: 40px;
 }
 
 a {

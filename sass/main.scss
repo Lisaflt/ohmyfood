@@ -9,7 +9,9 @@ body {
 
 main {
 	@include main;
-	height: 1200px;
+	display: flex;
+	flex-flow: wrap;
+	margin-top: 50px;
 }
 
 a {
@@ -25,16 +27,12 @@ h1 {
 	}
 }
 
-section {
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-between;
-	margin-top: 50px;
-}
 .menuLeft {
 	@include menuHome;
 	background-color: $backgroundcolor-menu1;
-	font-family: "Satisfy-Regular";
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .icone2 {
@@ -51,37 +49,40 @@ section {
 	@include menuHome;
 	background-color: $backgroundcolor-menu2;
 	font-family: $policeTitleMenu2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .menuBottomLeft {
 	@include menuHome;
 	background-color: $backgroundcolor-menu3;
-	font-family: $policeMenu3;
-	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .menuBottomRight {
 	@include menuHome;
 	background-color: $backgroundcolor-menu4;
-	font-family: $policeMenu3;
-	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .zoom {
-	margin-top: 75px;
-	transform: scale(1);
-	transition-property: transform;
-	transition-duration: 1000ms;
 	&:hover {
-		transform: scale(1.2);
-		opacity: 0.7;
+		transform: scale(1.1);
+		opacity: 1;
+		transition: transform 400ms ease-in-out;
 	}
-	line-height: 0.9;
 }
 
 .titleMenu1 {
 	color: rgb(61, 19, 25);
-	font-size: 35px;
+	font-size: 40px;
+	font-family: $policeTitleMenu1;
+	margin-top: 1vmin;
 }
 
 .titleMenu2 {
@@ -91,8 +92,8 @@ section {
 		rgb(234, 80, 95),
 		rgb(240, 144, 105)
 	);
+	font-family: $policeTitleMenu2;
 	font-size: 30px;
-	margin-top: 180px;
 }
 
 .titleMenu3 {
@@ -102,8 +103,8 @@ section {
 		rgb(20, 64, 223),
 		rgb(40, 145, 240)
 	);
+	font-family: $policeTitleMenu3;
 	font-size: 35px;
-	margin-top: 180px;
 }
 
 .titleMenu4 {
@@ -113,8 +114,8 @@ section {
 		rgb(74, 147, 58),
 		rgb(187, 245, 126)
 	);
+	font-family: $policeTitleMenu4;
 	font-size: 35px;
-	margin-top: 180px;
 }
 
 .titleMenu4 {
@@ -124,50 +125,55 @@ section {
 }
 
 .h3menu1 {
-	font-size: 45px;
-	font-family: "Niconne";
+	font-size: 55px;
+	font-family: $policeTitlemenu1bis;
 	color: rgb(61, 19, 25);
+	margin: 0;
 }
 
 .h3menu2 {
-	font-size: 45px;
-	font-family: "Niconne";
+	font-size: 55px;
+	font-family: $policeTitleMenu2bis;
 	color: rgb(227, 137, 48);
+	margin: 0;
 }
 
 .h3menu3 {
-	font-size: 45px;
-	font-family: "Niconne";
+	font-size: 65px;
+	font-family: $policeTitleMenu3bis;
 	@include degrade;
 	background-image: linear-gradient(
 		to right,
 		rgb(35, 63, 219),
 		rgb(29, 137, 251)
 	);
+	margin: 0;
 }
 
 .h3menu4 {
-	font-size: 45px;
-	font-family: "Niconne";
+	font-size: 65px;
+	font-family: $policeTitleMenu3bis;
 	@include degrade;
 	background-image: linear-gradient(
 		to right,
 		rgb(74, 147, 59),
 		rgb(187, 245, 127)
 	);
+	margin: 0;
 }
 
 .prochainement {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	padding-bottom: 70px;
 }
 .bouton {
 	height: 45px;
 	width: 350px;
 	position: relative;
 	background-color: #19a083;
-	color: yellow;
+	color: $color-nav;
 	font-family: "Montserrat";
 	border-radius: 10px;
 	font-size: 25px;
@@ -222,7 +228,7 @@ section {
 	}
 
 	.prochainement {
-		margin-bottom: 100px;
+		margin-bottom: 0px;
 	}
 }
 
@@ -250,6 +256,6 @@ section {
 	}
 
 	.prochainement {
-		margin-bottom: 100px;
+		margin-bottom: 0px;
 	}
 }

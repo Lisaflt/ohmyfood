@@ -5,48 +5,23 @@ $backgroundcolor-menu2: rgb(254, 245, 254);
 $backgroundcolor-menu3: rgb(237, 249, 249);
 $backgroundcolor-menu4: #fdfffd;
 
-@font-face {
-	font-family: "blackHand_TRIAL";
-	src: url("blackHand_TRIAL.otf") format ("OpenTypeFont"),
-		url ("blackHand_TRIAL.ttf") format ("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@400;500;600&family=Itim&family=Kalam&display=swap");
 
-@font-face {
-	font-family: "Itim-Regular";
-	src: url("Itim-Regular.ttf") format ("trueType");
-}
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Devonshire&family=Kaushan+Script&family=Nanum+Pen+Script&family=Parisienne&display=swap");
 
-@font-face {
-	font-family: "Kalam-Light";
-	src: url("Kalam-Light.ttf") format ("trueType");
-}
-
-@font-face {
-	font-family: "CroissantOne-Regular";
-	src: url("CroissantOne-Regular.ttf") format ("trueType");
-}
-
-@font-face {
-	font-family: "DancingScript-Regular";
-	src: url("DancingScript-Regular.ttf") format ("trueType");
-}
-
-@font-face {
-	font-family: "Satisfy-Regular";
-	src: url("Satisfy-Regular.ttf") format ("trueType");
-}
-
-@font-face {
-	font-family: "Niconne";
-	src: url("Niconne-Regular.ttf") format ("trueType");
-}
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 $policeHome: "Montserrat";
 
-$policeMenu1: "blackHand_TRIAL";
+$policeTitleMenu1: "Devonshire";
+$policeTitlemenu1bis: "Itim";
 
-$policeTitleMenu1: "Kalam-Light";
+$policeTitleMenu2: "Croissant One";
+$policeTitleMenu2bis: "DM Serif Text";
 
-$policeTitleMenu2: "CroissantOne-Regular";
+$policeTitleMenu3: "Dancing Script";
+$policeTitleMenu3bis: "Nanum Pen Script";
 
-$policeMenu3: "DancingScript-Regular";
+$policeTitleMenu4: "Kaushan Script";
+
+$policeMenu3_4: "Satisfy";

@@ -1,39 +1,7 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "blackHand_TRIAL";
-  src: url("blackHand_TRIAL.otf") format "OpenTypeFont", url "blackHand_TRIAL.ttf" format "truetype";
-}
-
-@font-face {
-  font-family: "Itim-Regular";
-  src: url("Itim-Regular.ttf") format "trueType";
-}
-
-@font-face {
-  font-family: "Kalam-Light";
-  src: url("Kalam-Light.ttf") format "trueType";
-}
-
-@font-face {
-  font-family: "CroissantOne-Regular";
-  src: url("CroissantOne-Regular.ttf") format "trueType";
-}
-
-@font-face {
-  font-family: "DancingScript-Regular";
-  src: url("DancingScript-Regular.ttf") format "trueType";
-}
-
-@font-face {
-  font-family: "Satisfy-Regular";
-  src: url("Satisfy-Regular.ttf") format "trueType";
-}
-
-@font-face {
-  font-family: "Niconne";
-  src: url("Niconne-Regular.ttf") format "trueType";
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@400;500;600&family=Itim&family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Devonshire&family=Kaushan+Script&family=Nanum+Pen+Script&family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @-webkit-keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -80,7 +48,6 @@
             transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-
 @keyframes shake {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
@@ -171,11 +138,11 @@ footer a:hover {
 }
 
 .mentionsLégales {
-  margin-left: 5px;
+  margin-left: 40px;
 }
 
 .contact {
-  margin-right: 5px;
+  margin-right: 40px;
 }
 
 body {
@@ -185,7 +152,12 @@ body {
 main {
   max-width: 900px;
   margin: auto;
-  height: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin-top: 50px;
 }
 
 a {
@@ -204,26 +176,24 @@ h1:hover {
   transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 
-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 50px;
-}
-
 .menuLeft {
   width: 390px;
-  height: 500px;
+  min-height: 30rem;
+  margin: 1rem;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   text-align: center;
   background-color: #fcdfdb;
-  font-family: "Satisfy-Regular";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .icone2 {
@@ -237,58 +207,80 @@ section {
 
 .menuRight {
   width: 390px;
-  height: 500px;
+  min-height: 30rem;
+  margin: 1rem;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   text-align: center;
   background-color: #fef5fe;
-  font-family: "CroissantOne-Regular";
+  font-family: "Croissant One";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menuBottomLeft {
   width: 390px;
-  height: 500px;
+  min-height: 30rem;
+  margin: 1rem;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   text-align: center;
   background-color: #edf9f9;
-  font-family: "DancingScript-Regular";
-  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menuBottomRight {
   width: 390px;
-  height: 500px;
+  min-height: 30rem;
+  margin: 1rem;
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   text-align: center;
   background-color: #fdfffd;
-  font-family: "DancingScript-Regular";
-  margin-top: 30px;
-}
-
-.zoom {
-  margin-top: 75px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
-  line-height: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .zoom:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  opacity: 0.7;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 
 .titleMenu1 {
   color: #3d1319;
-  font-size: 35px;
+  font-size: 40px;
+  font-family: "Devonshire";
+  margin-top: 1vmin;
 }
 
 .titleMenu2 {
@@ -297,8 +289,8 @@ section {
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left top, right top, from(#ea505f), to(#f09069));
   background-image: linear-gradient(to right, #ea505f, #f09069);
+  font-family: "Croissant One";
   font-size: 30px;
-  margin-top: 180px;
 }
 
 .titleMenu3 {
@@ -307,8 +299,8 @@ section {
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left top, right top, from(#1440df), to(#2891f0));
   background-image: linear-gradient(to right, #1440df, #2891f0);
+  font-family: "Dancing Script";
   font-size: 35px;
-  margin-top: 180px;
 }
 
 .titleMenu4 {
@@ -317,8 +309,8 @@ section {
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left top, right top, from(#4a933a), to(#bbf57e));
   background-image: linear-gradient(to right, #4a933a, #bbf57e);
+  font-family: "Kaushan Script";
   font-size: 35px;
-  margin-top: 180px;
 }
 
 .titleMenu4 {
@@ -332,35 +324,39 @@ section {
 }
 
 .h3menu1 {
-  font-size: 45px;
-  font-family: "Niconne";
+  font-size: 55px;
+  font-family: "Itim";
   color: #3d1319;
+  margin: 0;
 }
 
 .h3menu2 {
-  font-size: 45px;
-  font-family: "Niconne";
+  font-size: 55px;
+  font-family: "DM Serif Text";
   color: #e38930;
+  margin: 0;
 }
 
 .h3menu3 {
-  font-size: 45px;
-  font-family: "Niconne";
+  font-size: 65px;
+  font-family: "Nanum Pen Script";
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left top, right top, from(#233fdb), to(#1d89fb));
   background-image: linear-gradient(to right, #233fdb, #1d89fb);
+  margin: 0;
 }
 
 .h3menu4 {
-  font-size: 45px;
-  font-family: "Niconne";
+  font-size: 65px;
+  font-family: "Nanum Pen Script";
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: -webkit-gradient(linear, left top, right top, from(#4a933b), to(#bbf57f));
   background-image: linear-gradient(to right, #4a933b, #bbf57f);
+  margin: 0;
 }
 
 .prochainement {
@@ -371,6 +367,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 70px;
 }
 
 .bouton {
@@ -378,7 +375,7 @@ section {
   width: 350px;
   position: relative;
   background-color: #19a083;
-  color: yellow;
+  color: #f9cb45;
   font-family: "Montserrat";
   border-radius: 10px;
   font-size: 25px;
@@ -509,7 +506,7 @@ section {
     width: 340px;
   }
   .prochainement {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
 }
 
@@ -539,7 +536,7 @@ section {
     width: 340px;
   }
   .prochainement {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
