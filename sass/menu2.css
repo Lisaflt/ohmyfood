@@ -1,0 +1,368 @@
+@charset "UTF-8";
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+body,
+html {
+  margin: auto;
+}
+
+main {
+  margin: 50px auto 100px auto;
+  width: 60%;
+  -webkit-box-shadow: 1px 1px 12px #555;
+          box-shadow: 1px 1px 12px #555;
+  line-height: 1;
+  font-size: 20px;
+  padding: 25px;
+  background-color: #fef5fe;
+  font-size: 20px;
+}
+
+header {
+  background: #19a083;
+  text-align: center;
+  color: #f9cb45;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat";
+}
+
+footer {
+  background: #19a083;
+  color: #f9cb45;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  height: 8%;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer a:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.mentionsLégales {
+  margin-left: 40px;
+}
+
+.contact {
+  margin-right: 40px;
+}
+
+h2 {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e38930), to(#8f5bfd));
+  background-image: linear-gradient(to right, #e38930, #8f5bfd);
+  font-family: "Croissant One";
+}
+
+.flex {
+  padding-left: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.price {
+  text-align: right;
+}
+
+.menuOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #e38930;
+}
+
+.menuTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #a56799;
+}
+
+.dishThree p {
+  color: #6e4ccc;
+  padding-left: 90px;
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+a {
+  color: #f9cb45;
+  text-decoration: none;
+}
+
+h3 {
+  background: linear-gradient(to top, #e38930 0%, #e38930 1px, transparent 3px) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 1s;
+  transition: background-size 1s;
+}
+
+h3:hover {
+  background-size: 100% 100%;
+}
+
+.traitGauche {
+  width: 32%;
+  height: 5px;
+  -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+          clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+  margin-right: 10px;
+  background: #e38930;
+}
+
+.traitDroite {
+  width: 32%;
+  height: 5px;
+  background: #e38930;
+  -webkit-clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+          clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+  margin-left: 10px;
+}
+
+.titleFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e38930;
+}
+
+.traitGauche2 {
+  width: 32%;
+  height: 5px;
+  -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+          clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+  margin-right: 10px;
+  background: #a56799;
+}
+
+.traitDroite2 {
+  width: 32%;
+  height: 5px;
+  background: #a56799;
+  -webkit-clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+          clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+  margin-left: 10px;
+}
+
+.titleFlex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #a56799;
+}
+
+.traitGauche3 {
+  width: 32%;
+  height: 5px;
+  background: black;
+  -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+          clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+  margin-right: 10px;
+  background: #6e4ccc;
+}
+
+.traitDroite3 {
+  width: 32%;
+  height: 5px;
+  background: #6e4ccc;
+  -webkit-clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+          clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+  margin-left: 10px;
+}
+
+.titleFlex3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6e4ccc;
+}
+
+@media all and (max-width: 820px) {
+  main {
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 110px;
+    font-size: 21px;
+  }
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0px;
+    width: 100%;
+  }
+  p {
+    text-align: center;
+  }
+  .dishThree p {
+    padding-left: 0px;
+  }
+  .menuTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=menu2.css.map */

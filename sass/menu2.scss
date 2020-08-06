@@ -1,0 +1,162 @@
+@import "./abstracts/variables", "./abstracts/mixins";
+
+body,
+html {
+	@include body;
+}
+
+main {
+	@include mainPage;
+	@include menuPage;
+	padding: 25px;
+	background-color: $backgroundcolor-menu2;
+	font-size: 20px;
+}
+
+@import "./layout/header";
+
+@import "./layout/footer";
+
+h2 {
+	@include degrade;
+	background-image: linear-gradient(
+		to right,
+		rgb(227, 137, 48),
+		rgb(143, 91, 253)
+	);
+	font-family: $policeTitleMenu2;
+}
+
+.flex {
+	padding-left: 90px;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+}
+
+.price {
+	text-align: right;
+}
+
+.menuOne {
+	@include menuFlex;
+	color: rgb(227, 137, 48);
+}
+
+.menuTwo {
+	@include menuFlex;
+	color: rgb(165, 103, 153);
+}
+
+.dishThree p {
+	color: rgb(110, 76, 204);
+	padding-left: 90px;
+}
+
+h2,
+h3,
+h4 {
+	@include titleCenter;
+}
+
+a {
+	@include colornav;
+}
+
+h3 {
+	background: linear-gradient(to top, #e38930 0%, #e38930 1px, transparent 3px)
+		no-repeat;
+	@include animUnderline;
+}
+
+h3:hover {
+	background-size: 100% 100%;
+}
+
+.traitGauche {
+	@include traits;
+	clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+	margin-right: 10px;
+	background: rgb(227, 137, 48);
+}
+
+.traitDroite {
+	@include traits;
+	background: rgb(227, 137, 48);
+	clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+	margin-left: 10px;
+}
+
+.titleFlex {
+	@include titleFlex;
+	color: rgb(227, 137, 48);
+}
+
+.traitGauche2 {
+	@include traits;
+	clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+	margin-right: 10px;
+	background: rgb(165, 103, 153);
+}
+
+.traitDroite2 {
+	@include traits;
+	background: rgb(165, 103, 153);
+	clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+	margin-left: 10px;
+}
+
+.titleFlex2 {
+	@include titleFlex;
+	color: rgb(165, 103, 153);
+}
+
+.traitGauche3 {
+	@include traits;
+	background: black;
+	clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
+	margin-right: 10px;
+	background: rgb(110, 76, 204);
+}
+
+.traitDroite3 {
+	@include traits;
+	background: rgb(110, 76, 204);
+	clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
+	margin-left: 10px;
+}
+
+.titleFlex3 {
+	@include titleFlex;
+	color: rgb(110, 76, 204);
+}
+
+@media all and (max-width: 820px) {
+	main {
+		height: auto;
+		margin-top: 20px;
+		margin-bottom: 110px;
+		font-size: 21px;
+	}
+
+	.flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding-left: 0px;
+		width: 100%;
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.dishThree p {
+		padding-left: 0px;
+	}
+	.menuTwo {
+		flex-direction: column;
+		align-items: center;
+	}
+}

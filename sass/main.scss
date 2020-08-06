@@ -1,0 +1,261 @@
+@import "./abstracts/variables", "./abstracts/mixins";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+body {
+	@include body;
+}
+
+main {
+	@include main;
+	display: flex;
+	flex-flow: wrap;
+	margin-top: 50px;
+}
+
+a {
+	@include colornavHome;
+	@include colornav;
+}
+
+h1 {
+	&:hover {
+		transform: scale(1.2);
+		opacity: 1;
+		transition: transform 400ms ease-in-out;
+	}
+}
+
+.menuLeft {
+	@include menuHome;
+	background-color: $backgroundcolor-menu1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.icone2 {
+	@include degrade;
+	background-image: linear-gradient(
+		to right,
+		rgb(234, 80, 95),
+		rgb(240, 144, 105)
+	);
+	font-size: 80px;
+}
+
+.menuRight {
+	@include menuHome;
+	background-color: $backgroundcolor-menu2;
+	font-family: $policeTitleMenu2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.menuBottomLeft {
+	@include menuHome;
+	background-color: $backgroundcolor-menu3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.menuBottomRight {
+	@include menuHome;
+	background-color: $backgroundcolor-menu4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.zoom {
+	&:hover {
+		transform: scale(1.1);
+		opacity: 1;
+		transition: transform 400ms ease-in-out;
+	}
+}
+
+.titleMenu1 {
+	color: rgb(61, 19, 25);
+	font-size: 40px;
+	font-family: $policeTitleMenu1;
+	margin-top: 1vmin;
+}
+
+.titleMenu2 {
+	@include degrade;
+	background-image: linear-gradient(
+		to right,
+		rgb(234, 80, 95),
+		rgb(240, 144, 105)
+	);
+	font-family: $policeTitleMenu2;
+	font-size: 30px;
+}
+
+.titleMenu3 {
+	@include degrade;
+	background-image: linear-gradient(
+		to right,
+		rgb(20, 64, 223),
+		rgb(40, 145, 240)
+	);
+	font-family: $policeTitleMenu3;
+	font-size: 35px;
+}
+
+.titleMenu4 {
+	@include degrade;
+	background-image: linear-gradient(
+		to right,
+		rgb(74, 147, 58),
+		rgb(187, 245, 126)
+	);
+	font-family: $policeTitleMenu4;
+	font-size: 35px;
+}
+
+.titleMenu4 {
+	transform: (0.8);
+	opacity: 1;
+	transition: transform 300ms ease-in-out;
+}
+
+.h3menu1 {
+	font-size: 55px;
+	font-family: $policeTitlemenu1bis;
+	color: rgb(61, 19, 25);
+	margin: 0;
+}
+
+.h3menu2 {
+	font-size: 55px;
+	font-family: $policeTitleMenu2bis;
+	color: rgb(227, 137, 48);
+	margin: 0;
+}
+
+.h3menu3 {
+	font-size: 65px;
+	font-family: $policeTitleMenu3bis;
+	@include degrade;
+	background-image: linear-gradient(
+		to right,
+		rgb(35, 63, 219),
+		rgb(29, 137, 251)
+	);
+	margin: 0;
+}
+
+.h3menu4 {
+	font-size: 65px;
+	font-family: $policeTitleMenu3bis;
+	@include degrade;
+	background-image: linear-gradient(
+		to right,
+		rgb(74, 147, 59),
+		rgb(187, 245, 127)
+	);
+	margin: 0;
+}
+
+.prochainement {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 70px;
+}
+.bouton {
+	height: 45px;
+	width: 350px;
+	position: relative;
+	background-color: #19a083;
+	color: $color-nav;
+	font-family: "Montserrat";
+	border-radius: 10px;
+	font-size: 25px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.bouton1 {
+	@include bouton;
+	@include points;
+}
+.bouton2 {
+	@include bouton;
+	@include points;
+	animation-delay: 0.5s;
+}
+.bouton3 {
+	@include bouton;
+	@include points;
+	animation-delay: 0.9s;
+}
+
+.shakeRight:hover,
+.shakeLeft:hover {
+	@include shake;
+}
+
+@media all and (max-width: 920px) {
+	body,
+	html,
+	main,
+	header,
+	footer {
+		margin: auto;
+	}
+
+	.section {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 5px;
+	}
+
+	.menuRight,
+	.menuLeft,
+	.menuBottomLeft,
+	.menuBottomRight {
+		margin: auto;
+		margin-top: 20px;
+		width: 340px;
+	}
+
+	.prochainement {
+		margin-bottom: 0px;
+	}
+}
+
+@media all and (max-width: 520px) {
+	body,
+	html,
+	main,
+	header {
+		margin: auto;
+	}
+
+	.section {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 5px;
+	}
+
+	.menuRight,
+	.menuLeft,
+	.menuBottomLeft,
+	.menuBottomRight {
+		margin: auto;
+		margin-top: 20px;
+		width: 340px;
+	}
+
+	.prochainement {
+		margin-bottom: 0px;
+	}
+}
