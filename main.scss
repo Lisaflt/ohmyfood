@@ -45,6 +45,10 @@ h1 {
 	font-size: 80px;
 }
 
+.fasFaMusic {
+	display: inline;
+}
+
 .menuRight {
 	@include menuHome;
 	background-color: $backgroundcolor-menu2;
