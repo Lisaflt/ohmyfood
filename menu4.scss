@@ -8,7 +8,7 @@ html {
 main {
 	@include mainPage;
 	@include menuPage;
-	padding: 25px;
+	padding: 60px;
 	background-color: $backgroundcolor-menu4;
 	font-size: 20px;
 	font-family: $policeMenu3_4;
