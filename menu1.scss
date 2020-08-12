@@ -26,14 +26,16 @@ a {
 	}
 }
 
-.icone {
+.fas {
 	@include degrade;
-	background-image: linear-gradient(
-		to right,
-		rgb(234, 80, 95),
-		rgb(240, 144, 105)
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#f04a5e),
+		to(#f78f6a)
 	);
-	font-size: 90px;
+	font-size: 60px;
 }
 
 .iconeUp {
@@ -64,7 +66,6 @@ h4 {
 }
 
 h3 {
-	@include animUnderline;
 	background: linear-gradient(
 			to top,
 			(#000000) 0%,
@@ -72,6 +73,12 @@ h3 {
 			transparent 5.01%
 		)
 		no-repeat left bottom/0 100%;
+
+	@include animUnderline;
+}
+
+h3:hover {
+	background-size: 100% 100%;
 }
 
 a {
@@ -142,13 +149,5 @@ a {
 	.menuTwo {
 		flex-direction: column;
 		align-items: center;
-	}
-
-	.contact {
-		margin-right: 5px;
-	}
-
-	.mentionsLégales {
-		margin-left: 5px;
 	}
 }

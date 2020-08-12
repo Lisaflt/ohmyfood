@@ -104,7 +104,7 @@ main {
           box-shadow: 1px 1px 12px #555;
   line-height: 1;
   font-size: 20px;
-  padding: 25px;
+  padding: 60px;
   background-color: #edf9f9;
   font-family: "Satisfy";
   font-size: 20px;
@@ -161,9 +161,9 @@ footer a:hover {
 }
 
 h2 {
-  color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#233fdb), to(#1d89fb));
   background-image: linear-gradient(to right, #233fdb, #1d89fb);
   font-family: "Dancing Script";
@@ -329,6 +329,12 @@ h3:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contact {
+    margin-right: 5px;
+  }
+  .mentionsLégales {
+    margin-left: 5px;
   }
 }
 /*# sourceMappingURL=menu3.css.map */

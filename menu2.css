@@ -104,7 +104,7 @@ main {
           box-shadow: 1px 1px 12px #555;
   line-height: 1;
   font-size: 20px;
-  padding: 25px;
+  padding: 60px;
   background-color: #fef5fe;
   font-size: 20px;
 }
@@ -160,9 +160,9 @@ footer a:hover {
 }
 
 h2 {
-  color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#e38930), to(#8f5bfd));
   background-image: linear-gradient(to right, #e38930, #8f5bfd);
   font-family: "Croissant One";
@@ -363,6 +363,12 @@ h3:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contact {
+    margin-right: 5px;
+  }
+  .mentionsLégales {
+    margin-left: 5px;
   }
 }
 /*# sourceMappingURL=menu2.css.map */
