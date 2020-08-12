@@ -30,9 +30,6 @@ h1 {
 .menuLeft {
 	@include menuHome;
 	background-color: $backgroundcolor-menu1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .fas {
@@ -51,25 +48,16 @@ h1 {
 	@include menuHome;
 	background-color: $backgroundcolor-menu2;
 	font-family: $policeTitleMenu2;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .menuBottomLeft {
 	@include menuHome;
 	background-color: $backgroundcolor-menu3;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .menuBottomRight {
 	@include menuHome;
 	background-color: $backgroundcolor-menu4;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .zoom {
@@ -88,7 +76,7 @@ h1 {
 	background-image: linear-gradient(
 		to right,
 		rgb(234, 80, 95),
-		rgb(240, 144, 105)
+		rgb(228, 158, 130)
 	);
 	font-family: $policeTitleMenu2;
 	font-size: 29px;
@@ -158,7 +146,7 @@ h1 {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 70px;
+	padding-bottom: 110px;
 }
 .bouton {
 	height: 45px;
@@ -224,38 +212,18 @@ h1 {
 	}
 }
 
-@media all and (max-width: 520px) {
-	body,
-	html,
-	main,
-	header {
-		margin: auto;
-	}
-
-	.section {
-		flex-direction: column;
-		justify-content: center;
-		margin-top: 5px;
-	}
-
-	.menuRight,
-	.menuLeft,
-	.menuBottomLeft,
-	.menuBottomRight {
-		margin: auto;
-		margin-top: 20px;
-		width: 340px;
-	}
-
-	.prochainement {
-		margin-bottom: 0px;
+@media all and (max-width: 350px) {
+	h2 {
+		font-size: 25px;
 	}
 
 	.contact {
+		font-size: 15px;
 		margin-right: 5px;
 	}
 
 	.mentionsLégales {
+		font-size: 15px;
 		margin-left: 5px;
 	}
 }

@@ -4,6 +4,9 @@
 	margin: 1rem;
 	box-shadow: 1px 1px 12px #555;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 @mixin menuPage {
@@ -151,7 +154,7 @@
 		flex-direction: column;
 	}
 
-	.mentionsLegales {
+	.mentionsLégales {
 		margin-left: 0;
 	}
 }

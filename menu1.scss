@@ -127,8 +127,13 @@ a {
 	main {
 		height: auto;
 		margin-top: 20px;
-		margin-bottom: 110px;
+		margin-bottom: 150px;
 		font-size: 21px;
+	}
+
+	h2 {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.flex {
@@ -146,8 +151,33 @@ a {
 	.dishThree {
 		padding-left: 0px;
 	}
+
 	.menuTwo {
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.contact {
+		margin-right: 5px;
+	}
+
+	.mentionsLégales {
+		margin-left: 5px;
+	}
+}
+
+@media all and (max-width: 350px) {
+	h2 {
+		font-size: 25px;
+	}
+
+	.contact {
+		font-size: 15px;
+		margin-right: 5px;
+	}
+
+	.mentionsLégales {
+		font-size: 15px;
+		margin-left: 5px;
 	}
 }

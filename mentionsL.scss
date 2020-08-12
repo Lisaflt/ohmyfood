@@ -17,12 +17,72 @@ a {
 	@include colornav;
 }
 
-.icone2 {
-	@include degrade;
-	background-image: -webkit-linear-gradient(
-		to right,
-		rgb(234, 80, 95),
-		rgb(240, 144, 105)
-	);
-	font-size: 80px;
+h1 {
+	&:hover {
+		transform: scale(1.2);
+		opacity: 1;
+		transition: transform 400ms ease-in-out;
+	}
+}
+
+p {
+	margin: 50px 50px 10px 50px;
+	text-align: center;
+}
+
+@media all and (max-width: 920px) {
+	body,
+	html,
+	main,
+	header,
+	footer {
+		margin: auto;
+	}
+
+	.section {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 5px;
+	}
+}
+
+@media all and (max-width: 520px) {
+	body,
+	html,
+	header {
+		margin: auto;
+	}
+
+	main {
+		margin: auto;
+		margin-bottom: 70px;
+	}
+
+	p {
+		text-align: justify;
+	}
+
+	.contact {
+		margin-right: 5px;
+	}
+
+	.mentionsLégales {
+		margin-left: 5px;
+	}
+}
+
+@media all and (max-width: 350px) {
+	h2 {
+		font-size: 25px;
+	}
+
+	.contact {
+		font-size: 15px;
+		margin-right: 5px;
+	}
+
+	.mentionsLégales {
+		font-size: 15px;
+		margin-left: 5px;
+	}
 }

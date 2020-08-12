@@ -18,6 +18,14 @@ main {
 
 @import "./layout/footer";
 
+h1 {
+	&:hover {
+		transform: scale(1.2);
+		opacity: 1;
+		transition: transform 400ms ease-in-out;
+	}
+}
+
 h2 {
 	@include degrade;
 	background-image: linear-gradient(
@@ -87,7 +95,6 @@ h3 {
 			transparent 5.01%
 		)
 		no-repeat left bottom/0 100%;
-
 	@include animUnderline;
 }
 
@@ -129,6 +136,21 @@ h3:hover {
 	}
 
 	.mentionsLégales {
+		margin-left: 5px;
+	}
+}
+@media all and (max-width: 350px) {
+	h2 {
+		font-size: 25px;
+	}
+
+	.contact {
+		font-size: 15px;
+		margin-right: 5px;
+	}
+
+	.mentionsLégales {
+		font-size: 15px;
 		margin-left: 5px;
 	}
 }
