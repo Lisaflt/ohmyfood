@@ -170,13 +170,12 @@ a:hover {
   transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 
-.icone {
-  color: transparent;
-  background-clip: text;
+.fas {
   -webkit-background-clip: text;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ea505f), to(#f09069));
-  background-image: linear-gradient(to right, #ea505f, #f09069);
-  font-size: 90px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f04a5e), to(#f78f6a));
+  font-size: 60px;
 }
 
 .iconeUp {
@@ -226,11 +225,15 @@ h4 {
 }
 
 h3 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(5%, #000000), color-stop(5.01%, transparent)) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #000000 0%, #000000 5%, transparent 5.01%) no-repeat left bottom/0 100%;
   background-size: 0 100%;
   -webkit-transition: background-size 1s;
   transition: background-size 1s;
-  background: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(5%, #000000), color-stop(5.01%, transparent)) no-repeat left bottom/0 100%;
-  background: linear-gradient(to top, #000000 0%, #000000 5%, transparent 5.01%) no-repeat left bottom/0 100%;
+}
+
+h3:hover {
+  background-size: 100% 100%;
 }
 
 a {
@@ -285,9 +288,9 @@ a {
 }
 
 .icone2 {
-  color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#ea505f), to(#f09069));
   background-image: linear-gradient(to right, #ea505f, #f09069);
   font-size: 50px;

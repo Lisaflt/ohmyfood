@@ -104,7 +104,7 @@ main {
           box-shadow: 1px 1px 12px #555;
   line-height: 1;
   font-size: 20px;
-  padding: 25px;
+  padding: 60px;
   background-color: #fdfffd;
   font-size: 20px;
   font-family: "Satisfy";
@@ -161,9 +161,9 @@ footer a:hover {
 }
 
 h2 {
-  color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#4a933b), to(#bbf57f));
   background-image: linear-gradient(to right, #4a933b, #bbf57f);
   font-family: "Kaushan Script";
@@ -217,9 +217,9 @@ a {
 .gauche {
   width: 32%;
   height: 5px;
-  color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   background: -webkit-gradient(linear, left top, right top, from(#4a933b), to(#bbf57f));
   background: linear-gradient(to right, #4a933b, #bbf57f);
   -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 50%);
@@ -230,9 +230,9 @@ a {
 .droite {
   width: 32%;
   height: 5px;
-  color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   background: -webkit-gradient(linear, left top, right top, from(#bbf57f), to(#4a933b));
   background: linear-gradient(to right, #bbf57f, #4a933b);
   -webkit-clip-path: polygon(10% 0, 100% 50%, 10% 100%, 0 50%);
@@ -301,6 +301,12 @@ h3:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contact {
+    margin-right: 5px;
+  }
+  .mentionsLégales {
+    margin-left: 5px;
   }
 }
 /*# sourceMappingURL=menu4.css.map */

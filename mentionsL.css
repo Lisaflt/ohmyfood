@@ -156,4 +156,12 @@ a {
   color: #f9cb45;
   text-decoration: none;
 }
+
+.icone2 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(to right, #ea505f, #f09069);
+  font-size: 80px;
+}
 /*# sourceMappingURL=mentionsL.css.map */

@@ -35,12 +35,14 @@ h1 {
 	justify-content: center;
 }
 
-.icone2 {
+.fas {
 	@include degrade;
-	background-image: linear-gradient(
-		to right,
-		rgb(234, 80, 95),
-		rgb(240, 144, 105)
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#f04a5e),
+		to(#f78f6a)
 	);
 	font-size: 80px;
 }
@@ -71,11 +73,7 @@ h1 {
 }
 
 .zoom {
-	&:hover {
-		transform: scale(1.1);
-		opacity: 1;
-		transition: transform 400ms ease-in-out;
-	}
+	@include zoom;
 }
 
 .titleMenu1 {
@@ -93,7 +91,7 @@ h1 {
 		rgb(240, 144, 105)
 	);
 	font-family: $policeTitleMenu2;
-	font-size: 30px;
+	font-size: 29px;
 }
 
 .titleMenu3 {
@@ -116,12 +114,6 @@ h1 {
 	);
 	font-family: $policeTitleMenu4;
 	font-size: 35px;
-}
-
-.titleMenu4 {
-	transform: (0.8);
-	opacity: 1;
-	transition: transform 300ms ease-in-out;
 }
 
 .h3menu1 {

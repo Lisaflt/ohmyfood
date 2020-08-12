@@ -16,3 +16,13 @@ main {
 a {
 	@include colornav;
 }
+
+.icone2 {
+	@include degrade;
+	background-image: -webkit-linear-gradient(
+		to right,
+		rgb(234, 80, 95),
+		rgb(240, 144, 105)
+	);
+	font-size: 80px;
+}
