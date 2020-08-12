@@ -157,11 +157,73 @@ a {
   text-decoration: none;
 }
 
-.icone2 {
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(to right, #ea505f, #f09069);
-  font-size: 80px;
+h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+
+p {
+  margin: 50px 50px 10px 50px;
+  text-align: center;
+}
+
+@media all and (max-width: 920px) {
+  body,
+  html,
+  main,
+  header,
+  footer {
+    margin: auto;
+  }
+  .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  body,
+  html,
+  header {
+    margin: auto;
+  }
+  main {
+    margin: auto;
+    margin-bottom: 70px;
+  }
+  p {
+    text-align: justify;
+  }
+  .contact {
+    margin-right: 5px;
+  }
+  .mentionsLégales {
+    margin-left: 5px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  h2 {
+    font-size: 25px;
+  }
+  .contact {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .mentionsLégales {
+    font-size: 15px;
+    margin-left: 5px;
+  }
 }
 /*# sourceMappingURL=mentionsL.css.map */

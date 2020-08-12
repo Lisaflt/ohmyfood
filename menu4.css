@@ -160,6 +160,16 @@ footer a:hover {
   margin-right: 40px;
 }
 
+h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+
 h2 {
   -webkit-background-clip: text;
   background-clip: text;
@@ -306,6 +316,20 @@ h3:hover {
     margin-right: 5px;
   }
   .mentionsLégales {
+    margin-left: 5px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  h2 {
+    font-size: 25px;
+  }
+  .contact {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .mentionsLégales {
+    font-size: 15px;
     margin-left: 5px;
   }
 }

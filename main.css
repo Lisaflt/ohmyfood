@@ -180,7 +180,6 @@ h1:hover {
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   text-align: center;
-  background-color: #fcdfdb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,6 +190,7 @@ h1:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #fcdfdb;
 }
 
 .fas {
@@ -208,8 +208,6 @@ h1:hover {
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   text-align: center;
-  background-color: #fef5fe;
-  font-family: "Croissant One";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,6 +218,8 @@ h1:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #fef5fe;
+  font-family: "Croissant One";
 }
 
 .menuBottomLeft {
@@ -229,7 +229,6 @@ h1:hover {
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   text-align: center;
-  background-color: #edf9f9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,6 +239,7 @@ h1:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #edf9f9;
 }
 
 .menuBottomRight {
@@ -249,7 +249,6 @@ h1:hover {
   -webkit-box-shadow: 1px 1px 12px #555;
           box-shadow: 1px 1px 12px #555;
   text-align: center;
-  background-color: #fdfffd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,6 +259,7 @@ h1:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #fdfffd;
 }
 
 .zoom:hover {
@@ -283,8 +283,8 @@ h1:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ea505f), to(#f09069));
-  background-image: linear-gradient(to right, #ea505f, #f09069);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ea505f), to(#e49e82));
+  background-image: linear-gradient(to right, #ea505f, #e49e82);
   font-family: "Croissant One";
   font-size: 29px;
 }
@@ -353,7 +353,7 @@ h1:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 70px;
+  padding-bottom: 110px;
 }
 
 .bouton {
@@ -496,38 +496,16 @@ h1:hover {
   }
 }
 
-@media all and (max-width: 520px) {
-  body,
-  html,
-  main,
-  header {
-    margin: auto;
-  }
-  .section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 5px;
-  }
-  .menuRight,
-  .menuLeft,
-  .menuBottomLeft,
-  .menuBottomRight {
-    margin: auto;
-    margin-top: 20px;
-    width: 340px;
-  }
-  .prochainement {
-    margin-bottom: 0px;
+@media all and (max-width: 350px) {
+  h2 {
+    font-size: 25px;
   }
   .contact {
+    font-size: 15px;
     margin-right: 5px;
   }
   .mentionsLégales {
+    font-size: 15px;
     margin-left: 5px;
   }
 }
